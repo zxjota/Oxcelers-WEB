@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Oxcelers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-icon {
+            font-size: 2.5rem;
+            color: #4dabf7;
+        }
+        
+        .logo-text h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        
+        .logo-text p {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content */
+        .content-wrapper {
+            display: flex;
+            margin: 40px 0;
+            gap: 40px;
+        }
+        
+        .sidebar {
+            flex: 0 0 300px;
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: fit-content;
+            position: sticky;
+            top: 30px;
+        }
+        
+        .sidebar h3 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+        }
+        
+        .sidebar li {
+            margin-bottom: 12px;
+        }
+        
+        .sidebar a {
+            color: #555;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar a:hover, .sidebar a.active {
+            background-color: #eef5ff;
+            color: #1e3c72;
+            padding-left: 20px;
+        }
+        
+        .policy-content {
+            flex: 1;
+            background-color: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .policy-header {
+            margin-bottom: 30px;
+        }
+        
+        .policy-header h1 {
+            color: #1e3c72;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .policy-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .last-updated {
+            display: inline-block;
+            background-color: #eef5ff;
+            color: #1e3c72;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        /* Policy Sections */
+        .policy-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .policy-section:last-of-type {
+            border-bottom: none;
+        }
+        
+        .policy-section h2 {
+            color: #1e3c72;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .policy-section h2 i {
+            color: #4dabf7;
+        }
+        
+        .policy-section p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        
+        .policy-section ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .policy-section li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #1e3c72;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a1a2e;
+            color: #ccc;
+            padding: 40px 0 20px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .app-info h3 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #4dabf7;
+        }
+        
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                position: static;
+                flex: 1;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .contact-info {
+                text-align: center;
+            }
+            
+            .policy-content {
+                padding: 25px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .footer-links a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Oxcelers</h1>
+                        <p>Privacy and Security First</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:coco765432199@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        coco765432199@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content-wrapper">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar">
+                <h3>Privacy Policy</h3>
+                <ul>
+                    <li><a href="#introduction" class="active">Introduction</a></li>
+                    <li><a href="#data-collection">Data We Collect</a></li>
+                    <li><a href="#data-use">How We Use Data</a></li>
+                    <li><a href="#data-sharing">Data Sharing</a></li>
+                    <li><a href="#data-security">Data Security</a></li>
+                    <li><a href="#user-rights">Your Rights</a></li>
+                    <li><a href="#children">Children's Privacy</a></li>
+                    <li><a href="#changes">Policy Changes</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Policy Content -->
+            <main class="policy-content">
+                <div class="policy-header">
+                    <h1>Privacy Policy</h1>
+                    <p>This Privacy Policy describes how Oxcelers collects, uses, and shares your personal information when you use our application and services.</p>
+                    <div class="last-updated">
+                        <i class="far fa-calendar-alt"></i> Last Updated: January 11, 2026
+                    </div>
+                </div>
+
+                <!-- Introduction -->
+                <section id="introduction" class="policy-section">
+                    <h2><i class="fas fa-info-circle"></i> Introduction</h2>
+                    <p>Welcome to Oxcelers! We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services.</p>
+                    <p>Please read this Privacy Policy carefully. By accessing or using Oxcelers, you acknowledge that you have read, understood, and agree to be bound by all the terms outlined in this Privacy Policy. If you do not agree with our policies and practices, please do not use our application.</p>
+                </section>
+
+                <!-- Data Collection -->
+                <section id="data-collection" class="policy-section">
+                    <h2><i class="fas fa-database"></i> Information We Collect</h2>
+                    <p>We collect several types of information from and about users of our application:</p>
+                    
+                    <h3>Personal Information</h3>
+                    <p>When you register for an account or use certain features, we may collect personal information that can identify you, such as:</p>
+                    <ul>
+                        <li>Name and contact information (email address)</li>
+                        <li>Account credentials (username and encrypted password)</li>
+                        <li>Profile information you choose to provide</li>
+                        <li>Payment information for premium services (processed by secure third-party processors)</li>
+                    </ul>
+                    
+                    <h3>Usage Data</h3>
+                    <p>We automatically collect information about your interaction with Oxcelers, including:</p>
+                    <ul>
+                        <li>Device information (device type, operating system, unique device identifiers)</li>
+                        <li>Log data (IP address, browser type, pages visited, access times)</li>
+                        <li>App usage statistics and feature interaction data</li>
+                        <li>Performance data and error reports</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Note:</strong> We use cookies and similar tracking technologies to track activity on our application and hold certain information to enhance your user experience.</p>
+                    </div>
+                </section>
+
+                <!-- Data Use -->
+                <section id="data-use" class="policy-section">
+                    <h2><i class="fas fa-cogs"></i> How We Use Your Information</h2>
+                    <p>We use the information we collect for various business purposes, including:</p>
+                    <ul>
+                        <li>To provide, maintain, and improve our application and services</li>
+                        <li>To personalize your experience and deliver customized content</li>
+                        <li>To process transactions and send related information</li>
+                        <li>To communicate with you about updates, security alerts, and support messages</li>
+                        <li>To detect, prevent, and address technical issues and security vulnerabilities</li>
+                        <li>To conduct research and analysis to improve our services</li>
+                        <li>To comply with legal obligations and enforce our terms of service</li>
+                    </ul>
+                </section>
+
+                <!-- Data Sharing -->
+                <section id="data-sharing" class="policy-section">
+                    <h2><i class="fas fa-share-alt"></i> Information Sharing and Disclosure</h2>
+                    <p>We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:</p>
+                    
+                    <h3>Service Providers</h3>
+                    <p>We may share information with third-party vendors, consultants, and other service providers who need access to such information to carry out work on our behalf (e.g., hosting, analytics, customer support, payment processing).</p>
+                    
+                    <h3>Legal Requirements</h3>
+                    <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).</p>
+                    
+                    <h3>Business Transfers</h3>
+                    <p>In connection with any merger, sale of company assets, financing, or acquisition of all or a portion of our business, we may transfer your information to the new owner.</p>
+                    
+                    <h3>With Your Consent</h3>
+                    <p>We may share your information with third parties when you have given us your explicit consent to do so.</p>
+                </section>
+
+                <!-- Data Security -->
+                <section id="data-security" class="policy-section">
+                    <h2><i class="fas fa-shield-alt"></i> Data Security</h2>
+                    <p>We implement appropriate technical and organizational security measures designed to protect the security of your personal information. These measures include:</p>
+                    <ul>
+                        <li>Encryption of data in transit and at rest</li>
+                        <li>Regular security assessments and vulnerability testing</li>
+                        <li>Access controls and authentication mechanisms</li>
+                        <li>Secure development practices and employee training</li>
+                    </ul>
+                    <p>Despite our security measures, no method of transmission over the Internet or electronic storage is 100% secure. Therefore, we cannot guarantee absolute security of your information.</p>
+                </section>
+
+                <!-- User Rights -->
+                <section id="user-rights" class="policy-section">
+                    <h2><i class="fas fa-user-check"></i> Your Rights and Choices</h2>
+                    <p>Depending on your location, you may have certain rights regarding your personal information, including:</p>
+                    <ul>
+                        <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
+                        <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                        <li><strong>Deletion:</strong> Request deletion of your personal information under certain circumstances</li>
+                        <li><strong>Restriction:</strong> Request restriction of processing of your personal information</li>
+                        <li><strong>Portability:</strong> Request transfer of your data to another organization</li>
+                        <li><strong>Objection:</strong> Object to processing of your personal information</li>
+                    </ul>
+                    <p>To exercise these rights, please contact us at <a href="mailto:coco765432199@gmail.com">coco765432199@gmail.com</a>. We will respond to your request in accordance with applicable laws.</p>
+                </section>
+
+                <!-- Children's Privacy -->
+                <section id="children" class="policy-section">
+                    <h2><i class="fas fa-child"></i> Children's Privacy</h2>
+                    <p>Oxcelers is not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately.</p>
+                    <p>If we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will take steps to delete that information as quickly as possible.</p>
+                </section>
+
+                <!-- Policy Changes -->
+                <section id="changes" class="policy-section">
+                    <h2><i class="fas fa-exchange-alt"></i> Changes to This Privacy Policy</h2>
+                    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                    <p>We will also provide additional notice (such as adding a statement to our homepage or sending you a notification) if changes are material. Your continued use of Oxcelers after the effective date of the revised Privacy Policy constitutes your acceptance of the terms.</p>
+                </section>
+
+                <!-- Contact -->
+                <section id="contact" class="policy-section">
+                    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                    <p>If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us:</p>
+                    <div class="highlight-box">
+                        <p><strong>Email:</strong> <a href="mailto:coco765432199@gmail.com">coco765432199@gmail.com</a></p>
+                        <p><strong>App Name:</strong> Oxcelers</p>
+                        <p><strong>Effective Date:</strong> January 11, 2026</p>
+                    </div>
+                    <p>We will endeavor to respond to your inquiry within a reasonable timeframe.</p>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="app-info">
+                    <h3>Oxcelers</h3>
+                    <p>Your privacy is our priority</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Oxcelers. All rights reserved. This Privacy Policy is written in American English.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    // Update active link in sidebar
+                    document.querySelectorAll('.sidebar a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    
+                    // Scroll to the target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 30,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Update active link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.policy-section');
+            const sidebarLinks = document.querySelectorAll('.sidebar a');
+            
+            let currentSectionId = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if(window.scrollY >= sectionTop) {
+                    currentSectionId = '#' + section.getAttribute('id');
+                }
+            });
+            
+            sidebarLinks.forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
